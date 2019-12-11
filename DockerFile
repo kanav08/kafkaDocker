@@ -1,0 +1,5 @@
+From openjdk:8
+Expose 9098
+ADD /target/kafkadocker.jar kafkadocker.jar
+ENTRYPOINT ["java", "-jar", "kafkadocker.jar"]
+
